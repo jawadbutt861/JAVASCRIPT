@@ -347,10 +347,44 @@ else
 }
 
 // Product Purchase Validation
-
-
+var price=prompt("Enter Product Price");
+var avail=prompt("Is available?");
+var member=prompt("Are you member?");
+if(price > 1000 && avail === "yes" && member === "yes")
+{
+    console.log("Buy now with discount");
+}
+else if(avail === "yes")
+{
+    console.log("Buy now");
+}
+else if(avail === "no")
+{
+    console.log("Out of stock");
+}
+else
+{
+    console.log("Invalid product");
+}
 // Work Hours Check
-
+var hours=prompt("How many hours you worked");
+var isweekend=true;
+if(hours > 40 && isweekend !== true)
+{
+    console.log("Overtime");
+}
+else if(hours > 0 && isweekend === true)
+{
+    console.log("Weekend Work");
+}
+else if(hours <= 40)
+{
+    console.log("Regular Hours");
+}
+else
+{
+    console.log("No Work");
+}
 
 // Age and Gender Classification
 
@@ -422,6 +456,26 @@ else
 }
 
 // Course Access Control
+var loggedin2=true;
+var enrolled=true;
+var isbanned2=false;
+if(loggedin2 === true && enrolled === true && isbanned2 === false)
+{
+    console.log("Access Granted");
+}
+else if(loggedin2 !== true)
+{
+    console.log("Please Login");
+}
+else if(enrolled !== true)
+{
+    console.log("Enrolled in Course First");
+}
+else
+{
+    console.log("User is Banned");
+    
+}
 
 
 // Driving Conditions
