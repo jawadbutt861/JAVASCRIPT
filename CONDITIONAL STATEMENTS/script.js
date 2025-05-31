@@ -248,3 +248,68 @@ else
 {
     alert("Waiting for input...");
 }
+
+// Age-Based Grade Check
+var marks=prompt("Enter Your Marks");
+if(marks >= 80)
+{
+    console.log("Distinction");
+}
+else if(marks >= 50 && marks < 80)
+{
+    console.log("Passed");
+}
+else if(marks < 50)
+{
+    console.log("Fail");
+}
+else
+{
+    console.log("Invalid Marks");
+}
+
+// Discount Eligibility Based on Age and Membership
+var age3=prompt("Enter Your age");
+var pre_member=true;
+if(age >= 60 && pre_member === true)
+{
+    console.log("Senior Premium Discount");
+}
+else if (age >= 60)
+{
+    console.log("Senior Discount");    
+}
+else if (pre_member === true)
+{
+    console.log("Premium Discount");
+}
+else
+{
+    console.log("No Discount");
+}
+
+// Login and Email Verification
+
+var login=true;
+var email=true;
+if(login === true && email === true)
+{
+    console.log("Access granted");
+}
+else if( login === true && email !== true)
+{
+    console.log("Please verify your email");   
+}
+else
+{
+    console.log("Please log in");
+}
+
+// Contest Eligibility
+var age4=prompt("Enter Your Age");
+var country=prompt("Enter your country");
+var isbanned=false;
+if(age >= 18 && age <= 35 && (country === "Pakistan" || country === "India") && isbanned === false);
+{
+    console.log("Eligible");
+}
