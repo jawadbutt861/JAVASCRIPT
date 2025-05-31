@@ -309,7 +309,195 @@ else
 var age4=prompt("Enter Your Age");
 var country=prompt("Enter your country");
 var isbanned=false;
-if(age >= 18 && age <= 35 && (country === "Pakistan" || country === "India") && isbanned === false);
+if(age4 >= 18 && age4 <= 35 && (country === "Pakistan" || country === "India") && isbanned === false)
 {
     console.log("Eligible");
 }
+else if(age4 < 18 && age > 35)
+{
+    console.log("Age not matched");
+}
+else if(country != "Pakistan" || country !="India")
+{
+    console.log("Country not matched");
+}
+else
+{
+    console.log("You are Banned");
+}
+
+// Subscription Access Check
+var plan=prompt("Enter Your Plan");
+var loggedin=true;
+if(plan === "premium" && loggedin === true)
+{
+    console.log("Welcome Premium User");
+}       
+else if(plan === "free" && loggedin === true)
+{
+    console.log("Welcome Free User");
+}
+else if(loggedin === true)
+{
+    console.log("Please log in to continue");
+}
+else
+{
+    console.log("Invalid subscription");
+}
+
+// Product Purchase Validation
+
+
+// Work Hours Check
+
+
+// Age and Gender Classification
+
+var age5=prompt("Enter Your Age");
+var gender=prompt("Enter your gender");
+if(age >= 13 && age <= 19 && gender === "male")
+{
+    console.log("Teen Male");
+}
+else if(age >= 13 && age <= 19 && gender === "female")
+{
+    console.log("Teen Female");
+}
+else if(age >= 20)
+{
+    console.log("Adult");
+}
+else
+{
+    console.log("Child");
+}
+
+// Weather Warning System
+var temperature2=prompt("Enter Temperature");
+var humidity=prompt("Enter Humidity");
+if(temperature2 >= 40 && humidity >= 60)
+{
+    console.log("Heatwave Alert");
+}
+else if(temperature2 >= 40 && humidity < 60)
+{
+    console.log("Hot and Dry");
+}
+else if(temperature2 <= 20)
+{
+    console.log("Cool Weather");
+}
+else
+{
+    console.log("Moderate");
+}
+
+// Score Grading System
+
+var marks2=prompt("Enter Your Marks")
+if(marks2 >=90 && marks2 <= 100)
+{
+    console.log("Excellent");
+}
+else if(marks2 >=70 && marks2 <= 89)
+{
+    console.log("Good");
+}
+else if(marks2 >=50 && marks2 <= 69)
+{
+    console.log("Average");
+}
+else if(marks2 >=30 && marks2 <= 49)
+{
+    console.log("Poor");
+}
+else if(marks2 < 30)
+{
+    console.log("Fail");
+}
+else
+{
+    console.log("Invalid Score");
+}
+
+// Course Access Control
+
+
+// Driving Conditions
+var speed=prompt("Enter speed");
+var license=prompt("License status");
+if(speed > 120)
+{
+    console.log("License suspended");
+}
+else if(speed > 100 && speed < 120)
+{
+    console.log("Warning");
+}
+else if(speed <= 100 && license === true)
+{
+    console.log("Normal Driving");
+}
+else
+{
+    console.log("Driving without license");
+}
+
+// Order Processing Status
+
+var payment = prompt("Payment status");
+var shipment = prompt("Shipment status");
+if(payment === true && shipment === true)
+{
+    console.log("Order on the way");
+}
+else if(payment === true && shipment !== true)
+{
+    console.log("Preparing your order");   
+}
+else if(payment !== true)
+{
+    console.log("Awaiting payment");
+}
+else
+{
+    console.log("Payment failed");
+}
+
+// Battery Status Checker
+var battery=prompt("Enter your mobile charging percentage");
+var charging=prompt("Charging Status");
+if(battery === 100)
+{
+    console.log("Fully Charged");
+}
+else if(battery < 100 && charging === true)
+{
+    console.log("Charging...");
+}
+else if(battery < 20 && charging !== true)
+{
+    console.log("Low Battery");
+}
+else
+{
+    console.log("Battery OK");
+}
+
+// Browser and Device Compatibility Check
+var browser=prompt("Browser Name");
+var device=prompt("Device Name");
+if(browser === "chrome" && device === "desktop")
+{
+    console.log("Full features enabled");
+}
+else if(browser === "chrome" && device === "mobile")
+{
+    console.log("Limited mobile features");
+}
+else
+{
+    console.log("Please switch to Chrome");
+}
+    
