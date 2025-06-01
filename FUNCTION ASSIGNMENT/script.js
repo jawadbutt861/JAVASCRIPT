@@ -255,6 +255,21 @@ var side2 = prompt("Enter length of side 2")
 var side3 = prompt("Enter length of side 3")
 console.log(triangle(side1,side2,side3));
 
+// calculateDiscountedPrice
+
+var price = prompt("Enter Price of Product");
+var percentage = prompt("Enter Discount Percentage");
+
+function discountedprice(price,percentage)
+{
+    var discountedprice = (price * percentage)/100;
+    return "Discounted Price " + discountedprice;
+}
+var price = prompt("Enter Product Price");
+var percentage = prompt("Enter Discount Percentage");
+console.log(discountedprice(price,percentage));
+
+
 
 
 
