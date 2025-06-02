@@ -212,6 +212,21 @@ var age2 = prompt("Enter Your Age");
 console.log(voting(age2));
 
 // Absolute
+function absolute(num18)
+{
+    if(num18 < 0)
+    {
+        return -num18;
+    }
+    else
+    {
+        return num1;
+    }
+    
+}
+
+var num18 = prompt("Enter value");
+console.log(absolute(num18));
 
 // Temperature
 
@@ -269,7 +284,22 @@ var price = prompt("Enter Product Price");
 var percentage = prompt("Enter Discount Percentage");
 console.log(discountedprice(price,percentage));
 
+// Passwordvalid
 
+function isvalid(password)
+{
+    var length = password.length;
+    if(length >= 8)
+    {
+        return "Valid Password"
+    }
+    else
+    {
+        return "Too Short";
+    }
+}
+var password = prompt("Enter Password");
+console.log(isvalid(password));
 
 
 
