@@ -36,3 +36,32 @@ var cgpa = prompt("Enter Your CGPA");
 console.log(affidavit(name,fname,uni,start,department,semester,scholarship,cgpa));
 
 
+function yearcheck(year)
+{
+    if(year %4 === 0)
+    {
+        return "Leap Year"
+    }
+    else
+    {
+        return "Not Leap Year"
+    }
+}
+
+var year = prompt("Enter Year");
+console.log(yearcheck(year));
+
+// RESULT
+function checkpercentage(total,obtain)
+{
+    var percentage = (obtain * 100) / total;
+    return percentage;
+}
+
+// var checkgrade()
+// {
+
+// }
+// var total = prompt("Enter total marks");
+// var obtain =  prompt("Enter obtained marks");
+// console.log(checkpercentage(total,obtain));
