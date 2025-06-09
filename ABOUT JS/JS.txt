@@ -1,0 +1,25 @@
+										
+				VARIABLES,DATATYPES,TYPES OF VARIABLE DECLARATION,OBJECTS				
+				
+paranthesis () 
+can be written in single quotes
+html is directly connected to browser
+variables are containers for data
+data is stored in memory loacations
+variable name is memory location name and variable value we store in memroy location
+null means zero or empty
+JS is dynamically typed language 
+= is called assignment operator
+use camel case for variable name 
+var:variable can be re-declared and re-assigned
+let:variable cannot be re-delared but can be re-assigned
+const:neither re-declared nor re-assigned
+we use let and const for declaring variable
+if we declare variable with let and does'nt assign value then it give us undefined 
+if we declare variable with const and does'nt assign value then it give us error
+data types:
+7 primitve datatypes
+Number,String,Boolean,BigInt,Symbol,Null,Undefined
+Non primitive datatypes
+Objects(Collection of values)
+syntax key:value
