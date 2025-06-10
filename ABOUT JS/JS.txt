@@ -23,3 +23,14 @@ Number,String,Boolean,BigInt,Symbol,Null,Undefined
 Non primitive datatypes
 Objects(Collection of values)
 syntax key:value
+				
+				OPERATORS,CONDTIONAL STATEMENTS
+
+
+If we want to print two things in console we use comma ","
+unary operator
+a++ (post increment)
+++a (pre increment)
+a-- (post decrement)
+--a (pre decrement)
+
