@@ -44,16 +44,39 @@
 
 // Comparison Operators
 
-let a = 5;
-let b = 4;
+// let a = 5;
+// let b = 4;
 
-console.log("5 == 4", a == b);
+// console.log("5 == 4", a == b);
+// console.log("5 != 4", a != b);
+// console.log("5 === 4", a === b);
+// console.log("5 !== 4", a !== b);
+// console.log("5 >= 4", a >= b);
+// console.log("5 <= 4", a <= b);
+// console.log("5 > 4", a > b);
+// console.log("5 < 4", a < b);
 
-console.log("5 != 4", a != b);
-console.log("5 === 4", a === b);
-console.log("5 !== 4", a !== b);
-console.log("5 >= 4", a >= b);
-console.log("5 <= 4", a <= b);
-console.log("5 > 4", a > b);
-console.log("5 < 4", a < b);
+// Logical Operators
+
+// let a = 8;
+// let b = 9;
+
+// console.log(a === b && a > b);
+
+// console.log(a %2 === 1 && a < b);
+
+// console.log(a > b || a + b == 17);
+
+
+// Ternary Opertor
+
+let age = 20;
+age >= 18 ? "Adult" : "Child"; 
+
+let marks = 34;
+marks >= 33 ? "Pass" : "Fail";
+
+
+
+
 
