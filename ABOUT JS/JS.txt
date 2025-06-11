@@ -35,3 +35,13 @@ a-- (post decrement)
 --a (pre decrement)
 logical return a boolean value (true or false)
 
+
+					LOOPS AND STRINGS
+
+
+Loop is to execute a piece of code again & again
+initialize,stopping condition,updation or increment/decrement
+while loop (increment in the block)
+do-while (will run atleast one time if the condition is false)(condition is checked at the end also increment in the block)
+for-of loop (used for strings and arrays)(the content inside the braces is called iterator)
+for-in loop (used for objects and arrays) 
