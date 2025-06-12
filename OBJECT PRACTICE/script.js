@@ -99,16 +99,6 @@ let movie =
     duration : "2.5 hours"
 };
 
-let prices =
-{
-    orange : 250,
-    peach : 300,
-    banana : 200,
-    strawberry : 400,
-    cherry : 450,
-    apple : 200
-};
-
 let car_2 =
 {
     brand : "Toyota",
@@ -121,5 +111,65 @@ let car_2 =
 };
 
 console.log(car_2.detail());
+console.log(car_2["detail"]);
+
+let prices =
+{
+    orange : 250,
+    peach : 300,
+    banana : 200,
+    strawberry : 400,
+    cherry : 450,
+    apple : 200
+};
+
+
+let student_2 =
+{
+    name : "Jawad",
+    age : 22,
+    address : "Bugti Stadium Quetta",
+    city:
+    {
+        city : "Quetta",
+        zip : 88665
+    }
+};
+
+console.log("name" in student_2);
+console.log(student_2.hasOwnProperty("name"));
+
+
+let mycompany =
+{
+    IT:
+    {
+        cybersecurity:
+        {
+            name : ["Ali","Ahmed","Nimra"],
+            department : "Cyber Security"
+        },
+        network:
+        {
+            name : ["Kamran","Hassan","Saqib"],
+            department : "Networking"
+        }
+        
+    },
+    hr:
+    {
+        name : ["Aliza","Rabia","Rimsha"],
+        department : "HR"
+    },
+    marketing:
+    {
+        name : ["Samina","Kashif","Hania"],
+        department : "Marketing"
+    }
+
+};
+
+
+
 
 
