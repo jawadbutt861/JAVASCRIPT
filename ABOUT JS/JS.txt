@@ -23,6 +23,7 @@ Number,String,Boolean,BigInt,Symbol,Null,Undefined
 Non primitive datatypes
 Objects(Collection of values)
 syntax key:value
+ways to check a key exist in object or not
 in (check own property also check inherted property)
 has own property (only check own property)
 				
