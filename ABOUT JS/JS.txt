@@ -48,6 +48,20 @@ while loop (increment in the block)
 do-while (will run atleast one time if the condition is false)(condition is checked at the end also increment in the block)
 for-of loop (used for strings and arrays)(the content inside the braces is called iterator)
 for-in loop (used for objects and arrays) 
+string literals are represented by backtick(``) in which we embed expression this phenomenon is called string interpolation "${expression}"
+escape characters
+\n new line
+\t tab space  
+String Methods(strings are immutable means does'nt change) (original string pr koi effect ni hota 1 new value return krta h)
+toUpperCase()
+toLowerCase()
+trim() (Remove white spaces from start and end of the string)
+slice() (returns some part of string which we want)
+replace()
+concat()
+charAt()
+indexOf()
+
 
 
 						

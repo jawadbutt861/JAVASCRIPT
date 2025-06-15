@@ -94,3 +94,57 @@ for(let i = 1; i <= 100; i++)
         console.log(i);
     }
 }
+
+// Question 13
+let str = "Javascript";
+for(let i of str)
+{
+    console.log(i);
+}
+
+// Question 14
+let str2 = "Hello User";
+for(let i of str2)
+{
+    console.log(i);
+}
+
+// Question 15
+let str3 = "Hi, My name is Jawad, student of BUITEMS";
+for(let i of str3)
+{
+    console.log(i);
+}
+
+// Question 16
+let student = 
+{
+    Name : "Jawad",
+    ID : 62024,
+    Semester : "6th",
+    CGPA : 3.5
+};
+
+for(let i in student)
+{
+    console.log("key = " + i + " Value = " + student[i]);   
+}
+
+// Question 17
+
+let car =
+{
+    Name : "Crown",
+    Model : 2020,
+    Color : "Black",
+    isAccidental : false,
+    No : 539
+};
+
+for(let i in car)
+{
+    console.log("key = " + i + " Value = " + car[i]);   
+}
+
+
+
