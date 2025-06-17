@@ -45,6 +45,10 @@ let str = "Apple,Banana,mango";
 console.log(str.split(" "));
 
 // Question 9
+
+let chars = ["J","S"];
+console.log(chars.join(""));
+
 // Question 10
 
 let array1 = ["Pen","Pencil"];
@@ -53,8 +57,14 @@ console.log(array1.concat(array2));
 
 // Question 11
 
+let nums3 = [10,5,2,8];
+console.log(nums3.sort().toString());
 
 // Question 12
+
+let names2 = ["Jawad","Ali","Ahmed","Akbar","Aslam","Kamran","Talha"];
+console.log(names2.sort());
+
 // Question 13
 
 let nums = [1,2,3,4,5,6,7,8,9,10];
@@ -78,7 +88,15 @@ nums2.splice(2,1);
 console.log(nums2);
 
 // Question 17
+
+let str2 = "HTML CSS JAVASCRIPT";
+console.log(str2.split(" "));
+
 // Question 18
+
+let chars2 = ["a","b","c"];
+console.log(chars2.reverse().join("-"));
+
 // Question 19
 
 let cities2 = ["Quetta","Rawalpindi","Islamabad","Lahore","Karachi","Peshawar"];
