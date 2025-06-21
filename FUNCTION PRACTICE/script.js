@@ -81,8 +81,21 @@ function area(radius)
 let radius = prompt("Enter radius of circle");
 console.log(area(radius));
 
+let mul = (a,b) => {
+    return a * b;
+}
+
+console.log(mul(2,2));
+
+function vowels(str)
+{
+    str.split("");
+    
+}
 
 
-
-
-
+let sub = (a,b) =>
+{
+    return "Subtraction is ",a-b;
+}
+sub(5,2);
