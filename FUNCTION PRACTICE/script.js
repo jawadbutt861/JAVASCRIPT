@@ -239,3 +239,30 @@
 // reduce the array to single value
 // flter the value on basis of condition
 // forEach returns changes in original array
+
+// let n = prompt("Enter a number");
+// let arr = [];
+// for(i = 1; i <= n; i++)
+// {
+//     arr[i-1] = i;
+// }
+
+// let ans = arr.filter((val) =>{
+//     return val %2 == 0;
+// })
+
+// console.log(ans);
+
+
+// let n = prompt("Enter a number");
+// let arr = [];
+// for(i = 1; i <= n; i++)
+// {
+//     arr[i-1] = i;
+// }
+
+// let ans = arr.filter((val) =>{
+//     return val %2 != 0;
+// })
+
+// console.log(ans);
