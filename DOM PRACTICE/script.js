@@ -55,4 +55,21 @@ h2.style.textDecoration = "underline";
 let heading = document.querySelector(".heading");
 heading.style.textAlign = "center";
 heading.append(h2);
+// after
+let para = document.createElement("p")
+// para.setAttribute("para-2");
+para.innerText = "Added using JS";
+para.style.fontSize = "20px"
+
+let para2 = document.querySelector(".para-2");
+para2.prepend(para);
+//before
+
+let div = document.createElement("div");
+div.innerText = "hello";
+div.style.fontSize = "30px";
+let box = document.querySelector(".box")
+box.before(div);
+// box.after(div);
+
 
