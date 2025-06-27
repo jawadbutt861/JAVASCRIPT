@@ -35,12 +35,24 @@
 // input.style.borderRadius = "20px";
 // input.style.border = "1px solid black"
 
-let btn = document.createElement("button");
-btn.innerText = "Click me!";
-btn.style.backgroundColor = "red";
-btn.style.color = "white";
-document.querySelector("body").prepend(btn);
+// let btn = document.createElement("button");
+// btn.innerText = "Click me!";
+// btn.style.backgroundColor = "red";
+// btn.style.color = "white";
+// document.querySelector("body").prepend(btn);
 
-let para = document.querySelector(".para");
-para.classList.add("content");
-console.log(para.classList);
+// let para = document.querySelector(".para");
+// para.classList.add("content");
+// console.log(para.classList);
+
+
+let h2 = document.createElement("h2");
+h2.innerText = "Hello Jawad";
+h2.style.color = "blue";
+h2.style.textDecoration = "underline";
+
+
+let heading = document.querySelector(".heading");
+heading.style.textAlign = "center";
+heading.append(h2);
+
