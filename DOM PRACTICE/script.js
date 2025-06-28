@@ -46,30 +46,64 @@
 // console.log(para.classList);
 
 
-let h2 = document.createElement("h2");
-h2.innerText = "Hello Jawad";
-h2.style.color = "blue";
-h2.style.textDecoration = "underline";
+// let h2 = document.createElement("h2");
+// h2.innerText = "Hello Jawad";
+// h2.style.color = "blue";
+// h2.style.textDecoration = "underline";
 
 
-let heading = document.querySelector(".heading");
-heading.style.textAlign = "center";
-heading.append(h2);
+// let heading = document.querySelector(".heading");
+// heading.style.textAlign = "center";
+// heading.append(h2);
 // after
-let para = document.createElement("p")
+// let para = document.createElement("p")
 // para.setAttribute("para-2");
-para.innerText = "Added using JS";
-para.style.fontSize = "20px"
+// para.innerText = "Added using JS";
+// para.style.fontSize = "20px"
 
-let para2 = document.querySelector(".para-2");
-para2.prepend(para);
+// let para2 = document.querySelector(".para-2");
+// para2.prepend(para);
 //before
 
-let div = document.createElement("div");
-div.innerText = "hello";
-div.style.fontSize = "30px";
-let box = document.querySelector(".box")
-box.before(div);
+// let div = document.createElement("div");
+// div.innerText = "hello";
+// div.style.fontSize = "30px";
+// let box = document.querySelector(".box")
+// box.before(div);
 // box.after(div);
 
 
+// let input = document.querySelector("#number");
+// let getvalue = () => {
+//     console.log(input.value);
+//     return input.value;
+// }
+
+// let table = () =>
+// {
+//     let num = getvalue();
+//     for(let i = 1; i <= 10; i++)
+//     {
+//         document.write(`${num} * ${i} = ${num * i} <br>`)
+//     }
+// }
+
+let input = document.querySelector("#number");
+
+let result = document.querySelector("#write")
+function getvalue()
+{
+    console.log(input.value);
+    return input.value;
+}
+
+function printTable()
+{
+    let num = getvalue();
+    for(let i = 1; i <= 10; i++)
+    {
+        // console.log(`${num} * ${i} = ${num * i}`);
+        result.innerHTML += `${num} * ${i} = ${num * i} <br>`;
+        // document.write(`${num} * ${i} = ${num * i} <br>`);
+    }
+}
