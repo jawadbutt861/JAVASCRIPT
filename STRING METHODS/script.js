@@ -5,4 +5,4 @@ console.log(str.toLowerCase());
 console.log(str.slice(6));
 console.log(str.indexOf("d"));
 console.log(str.split("").reverse().join(""));
-
+console.log(str.replace("Coders","Developers"));
