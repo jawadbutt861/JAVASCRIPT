@@ -106,6 +106,13 @@
 
 // 
 
+// let obj = {
+//     Name : "Jawad",
+//     Age : 22
+// };
 
+// let arr = Object.entries(obj);
+// console.log(arr);
 
+// console.log("hello");
 
