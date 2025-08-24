@@ -1,6 +1,6 @@
 class Car{
-    constructor(){
-        console.log("Parent Constructor");
+    constructor(name){
+        console.log(`Parent Constructor`);
     }
     start(name){
         console.log(`Start the ${name}`);
@@ -20,11 +20,12 @@ class Car{
 }
 
 class Civic extends Car{
-    constructor(){
+    constructor(name){
         super();
-        console.log(`Civic Constructor`);
+        console.log(`${name} Constructor`);
     }
     color(name){
+        super.brake(name);
         console.log(`${name} is Black`);
     }
     model(name){
@@ -36,6 +37,10 @@ class Civic extends Car{
 }
  
 class Alto extends Car{
+    constructor(name){
+        super();
+        console.log(`${name} Constructor`);
+    }
     sunroof(name){
         console.log(`${name} has no Sunroof`);
     }
@@ -47,8 +52,8 @@ class Alto extends Car{
     }
 }
 
-let alto = new Alto();
-let civic = new Civic();
+let alto = new Alto("Alto");
+let civic = new Civic("Civic");
 civic.model("Civic");
 civic.lights("Civic");
 civic.color("Civic");
@@ -56,3 +61,31 @@ alto.start("Alto");
 alto.horn("Alto");
 alto.color("Alto");
 alto.model("Alto");
+
+
+// Practice 1
+
+let data = "Secret Data";
+class User{
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
+    }
+    viewData(){
+        console.log(data);
+    }
+}
+
+let user1 = new User("Jawad","jawadbutt861@gmail.com");
+let user2 = new User("Laiba","laibabutt000@gmail.com");
+
+class Admin extends User{
+    constructor(name,email){
+        super(name,email)
+    }
+    editData(){
+        console.log("Add some data");
+    }
+}
+
+let admin = new Admin("ali","alibutt000@gmail.com")
