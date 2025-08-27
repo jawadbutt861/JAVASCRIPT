@@ -177,3 +177,163 @@
 // Jawad.increaseScore(10);
 // Jawad.increaseScore(2);
 // Jawad.increaseScore(4);
+
+
+
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+//     }
+
+//     sound(){
+//         console.log(`${this.name} makes Sound`);   
+//     }
+// }
+
+// class Dog extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+
+//     sound(){
+//         console.log(`${this.name} barking`);
+//     }
+// }
+// let animal = new Animal("Cat");
+// animal.sound();
+// let Dog1 = new Dog("Dog");
+// Dog1.sound();
+
+// class Shape{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     area(){
+//       console.log(`No Area for this ${this.name}`);
+//     }
+// }
+
+// class Square  extends Shape{
+//     constructor(side){
+//         super("Square");
+//         this.side = side;
+//     }
+
+//     area(){
+//         return this.side * this.side;
+//     }
+// }
+
+// class Rectangle extends Shape{
+//     constructor(length,width){
+//         super("Rectangle");
+//         this.length = length;
+//         this.width = width;
+//     }
+    
+//     area(){
+//         return this.length * this.width;
+//     }
+// }
+
+
+// let square = new Square(2);
+// console.log(`Area = ${square.area()}`);
+// let rectangle = new Rectangle(3,2);
+// console.log(`Area = ${rectangle.area()}`);
+
+
+// class Vehicle{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     nameV(){
+//         console.log(`${this.name}  `);
+//     }
+//     start(){
+//         console.log(`${this.name} start`);
+//     }
+
+//     sound(){
+//         console.log(`${this.name} make sound`);
+//     }
+
+//     fuel(){
+//         console.log(`${this.name} has fuel`);
+//     }
+// }
+
+// class Car extends Vehicle{
+//     constructor(name){
+//         super("Car")
+//         this.name = name;
+//     }
+//     sound(){
+//         console.log(`${this.name} make sound. hmmm , hmmmmm`);
+//     }
+//     fuel(){
+//         console.log(`${this.name} has Diesel`);
+//     }
+
+
+// }
+
+// class Bike extends Vehicle{
+//     constructor(name){
+//         super("Bike")
+//         this.name = name;
+//     }
+//     sound(){
+//         console.log(`${this.name} make sound. phatt , phattt`);
+//     }
+//     fuel(){
+//         console.log(`${this.name} has Petrol`);
+//     }
+// }
+
+// let civic = new Car("Civic");
+// civic.fuel();
+// civic.sound();
+// civic.nameV();
+// let scooter = new Bike("Scooter");
+// scooter.sound();
+// scooter.fuel();
+// scooter.start();
+
+
+class BankAccount{
+    constructor(name,balance,type){
+        this.name = name;
+        this.balance = balance;
+        this.type = type;
+        // this.accountNo = accountNo;
+        // this.accountType = accountType;
+    }
+    deposit(amount){
+        return this.balance += amount;
+    }
+    withdraw(amount){
+        if(this.balance >= amount){
+        return this.balance -= amount;
+        }
+    }
+    accounttype(){
+        return this.type
+    }
+}
+
+class SavingAccount extends BankAccount{
+    constructor(type){
+        super();
+        this.type = type;
+    }
+     accounttype(){
+        return this.type
+    }
+    
+    
+}
+
+class CurrentAccount extends BankAccount{
+
+}
