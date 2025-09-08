@@ -53,3 +53,33 @@ for(let i = 0; i < students.length; i++){
 console.log(topper);
 
 
+let prices = [
+    {
+        Name : "Laptop",
+        Price : 60000
+    },
+    {
+        Name : "Mobile",
+        Price : 30000
+    },
+    {
+        Name : "Tablet",
+        Price : 40000
+    },
+    {
+        Name : "Headphones",
+        Price : 10000
+    },
+    {
+        Name : "Cycle",
+        Price : 20000
+    },
+    {
+        Name : "PC",
+        Price : 50000
+    }
+];
+
+function filterPrices(max,min){
+    
+}
