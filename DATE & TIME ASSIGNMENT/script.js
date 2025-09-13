@@ -46,3 +46,15 @@
 // }
 
 // console.log(getDay());
+
+
+function lastDay(){
+    let current = new Date();
+    let year = current.getFullYear();
+    let month= current.getMonth();
+
+    let lastDay = new Date(year,month + 1 , 0).getDate();
+    return lastDay;
+}
+
+console.log(lastDay());
