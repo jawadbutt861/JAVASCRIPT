@@ -8,4 +8,8 @@ console.log(currentDate.getMilliseconds());
 console.log(currentDate.getMonth());
 console.log(currentDate.getTime());
 console.log(currentDate.getFullYear());
+<<<<<<< HEAD
+logp
+=======
 
+>>>>>>> f5a29f05021c210dbccab2bf6b69c9965c0010d0
