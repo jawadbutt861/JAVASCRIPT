@@ -145,6 +145,7 @@
 //   let alarm = new Date();
 //   let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 //   let currentDay = days[alarm.getDay()];
+//    let currentTime = alarm.getTime();
 //   if(currentDay==="Monday" && currentTime==="08:00")
 //   {
 //     return "Alarm"
