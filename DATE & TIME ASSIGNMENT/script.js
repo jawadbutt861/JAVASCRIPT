@@ -113,4 +113,48 @@
 // console.log(check());
 
 
+// function birthdays() {
+//   let dob1 = new Date("2000-01-01");
+//   let dob2 = new Date("2002-05-15");
+//   if (dob1.getTime() === dob2.getTime()){
+//     return "Same birthday";
+//   } 
+//   if(dob1 < dob2){
+//         console.log(`Person 2 is older`)
+//         let difference = Math.abs(dob1 - dob2);
+//         let years = Math.floor(difference / (1000*60*60*24*365));
+//         let days = Math.floor(difference / (1000*60*60*24)) / 365;
+//         return dob2+" is older by "+years+" years "+days+" days";
+//   }
+//   else{
+//         console.log(`Person 1 is older`) 
+//         let difference = Math.abs(dob1 - dob2);
+//         let years = Math.floor(difference / (1000*60*60*24*365));
+//         let days = Math.floor(difference / (1000*60*60*24)) / 365;
+//         return dob1+" is older by "+years+" years "+days+" days";
+//   }
+  
+// }
+
+
+// console.log(birthdays());
+
+
+
+// function alarmChecker() {
+//   let alarm = new Date();
+//   let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+//   let currentDay = days[alarm.getDay()];
+//   if(currentDay==="Monday" && currentTime==="08:00")
+//   {
+//     return "Alarm"
+//   }
+//   else{
+//     return "No alarm"
+//   }
+// }
+
+// console.log(alarmChecker());
+
+
 
