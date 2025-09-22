@@ -159,3 +159,15 @@
 // console.log(add);
 
 
+// let fruits = ["apple", "banana", "apple", "orange", "banana"];
+// let count = fruits.reduce((acc,cval) =>{
+//     acc[cval] = (acc[cval] || 0) + 1;
+//     return acc
+// })
+
+// console.log(count);
+
+// let numbers = [10, 45, 67, 89, 32, 99, 23];
+// let max = numbers.reduce((acc,cval) =>{
+//     return cval > acc ? cval : acc 
+// },numbers[0])
