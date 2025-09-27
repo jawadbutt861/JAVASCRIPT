@@ -40,3 +40,25 @@
 //         btn.innerHTML = "Dark Mode";
 //     }
 // })
+
+
+let heading = document.querySelector("#heading");
+
+heading.addEventListener("mouseover",()=>{
+    heading.style.color = 'red';
+})
+
+heading.addEventListener("mouseout",()=>{
+    heading.style.color = 'black';
+})
+
+heading.addEventListener("click",()=>{
+    heading.innerHTML = 'Changed on Click';
+})
+
+let name = document.querySelector("#name");
+
+name.addEventListener("input",()=>{
+    console.log(name.value);
+    
+})
