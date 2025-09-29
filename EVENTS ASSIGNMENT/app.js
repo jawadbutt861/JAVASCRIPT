@@ -58,9 +58,71 @@
 // })
 
 
-let input = document.querySelector("#input");
+// let input = document.querySelector("#input");
 
-input.addEventListener("input",()=>{
-    console.log(input.value.toUpperCase());
+// input.addEventListener("input",()=>{
+//   input.value= input.value.toUpperCase();
     
+// })
+
+// let area = document.querySelector("#area");
+// let para = document.querySelector("#para");
+// let count = 0
+// area.addEventListener("input",()=>{    
+//     para.innerHTML = ++count;
+
+// })
+
+// let form = document.querySelector("#form");
+// let fname = document.querySelector("#fname");
+// let lname = document.querySelector("#lname");
+// let para = document.querySelector("#para");
+// let banned = ["spam","test"]
+// form.addEventListener("submit",(event)=>{
+//     if(banned.includes(fname.value) || banned.includes(lname.value)){
+//         event.preventDefault();
+//         para.innerHTML = "Contains Banned Words";
+//     }
+
+//     else{
+//         para.innerHTML = "Submitted"
+//     }
+// })
+
+
+let pass = document.querySelector("#pass");
+let para = document.querySelector("#para");
+let form = document.querySelector("#form");
+form.addEventListener("submit",()=>{
+    let password = pass.value;
+    let strength = Validate(password);
+    para.innerHTML = `${strength}`;
 })
+
+function Validate(password){
+    let length = password.length;
+    let uppercase = /^[A-Z]+$/.test(password);
+    let lowercase = /^abc$/.test(password);
+    let nums = /^[0-9]+$/.test(password);
+    let special= /^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(password);
+    let score = 0
+    if(length >= 8){
+        score++;
+    }
+    if(uppercase == true){
+        score++;
+    }
+    if(lowercase == true){
+        score++;
+    }
+    if(nums == true){
+        score++;
+    }
+    if(special == true){
+        score++;
+    }
+
+   if(score <= 2) return "Weak"
+   else return "Strong"
+}
+
