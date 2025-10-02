@@ -218,3 +218,20 @@
 //         behavior : "smooth"
 //     });
 // })
+
+let ul = document.querySelector("#ul");
+const ignoreKeys = [
+      "Shift", "Control", "Alt", "Meta", "CapsLock",
+      "Tab", "Escape", "Enter", "ArrowUp", "ArrowDown",
+      "ArrowLeft", "ArrowRight"
+    ];
+
+    document.addEventListener("keydown",(event)=>{
+        let keypressed = event.key;
+        if(!ignoreKeys.includes(keypressed))
+        {
+            ul.innerHTML += `
+            <li>${keypressed}</li>
+            `
+        }
+    })
