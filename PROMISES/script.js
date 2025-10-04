@@ -29,16 +29,16 @@
 // })
 
 
-function getData(data){
-    return new Promise((resolve,reject) =>{
-        console.log("fetching data..........");
-        setTimeout(() =>{
-            console.log(`data ${data}`);
-            resolve("resolved");
-            // reject("rejected")
-        },2000)
-    })
-}
+// function getData(data){
+//     return new Promise((resolve,reject) =>{
+//         console.log("fetching data..........");
+//         setTimeout(() =>{
+//             console.log(`data ${data}`);
+//             resolve("resolved");
+//             // reject("rejected")
+//         },2000)
+//     })
+// }
 
 // function getData2(data){
 //     return new Promise((resolve,reject) =>{
@@ -53,16 +53,16 @@ function getData(data){
 
 //Promise Chain
 
-getData(1).then((res) =>{
-    return getData(2);
-}).then((res) =>{
-    return getData(3);
-}).then((res) =>{
-    return getData(4);
-}).then((res) =>{
-    console.log(res);
+// getData(1).then((res) =>{
+//     return getData(2);
+// }).then((res) =>{
+//     return getData(3);
+// }).then((res) =>{
+//     return getData(4);
+// }).then((res) =>{
+//     console.log(res);
     
-})
+// })
 // p1.then((res) =>{
 //     console.log(res);  
 // })
@@ -70,3 +70,26 @@ getData(1).then((res) =>{
 // p1.catch((err) =>{
 //     console.log(err);
 // })
+
+
+function getData(data){
+    console.log("Fetching Data........");
+    
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log(`data ${data}`);
+            
+            resolve("Resolved")
+        },2000);
+    })
+}
+
+getData(1).then((res)=>{
+    return getData(2);
+}).then((res)=>{
+    return getData(3);
+}).then((res)=>{
+    return getData(4)
+}).finally(()=>{
+    console.log("Finished");  
+})
